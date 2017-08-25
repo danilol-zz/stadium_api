@@ -1,0 +1,13 @@
+development:
+  clients:
+    default:
+      database: stadiums_development
+      hosts:
+        - localhost:<%= ENV["MONGODB_PORT"] || "27017" %>
+
+test:
+  clients:
+    default:
+      database: stadiums_test
+      hosts:
+         localhost:<%= ENV["MONGODB_PORT"] || "27017" %>

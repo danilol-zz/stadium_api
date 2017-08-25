@@ -1,0 +1,19 @@
+Estadio
+nome,
+nome_oficial:
+endereco {
+  rua
+  nro
+  cidade
+  estado
+  pais
+}
+clube
+capacidade
+data inauguracao
+description
+
+
+http://stadiumdb.com/stadiums/bra/estadio_do_morumbi
+http://stadiumdb.com/stadiums/aus/docklands_stadium
+
