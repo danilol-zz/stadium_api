@@ -4,13 +4,13 @@ class StadiumsController < Sinatra::Base
   end
 
   get '/' do
-    @stadiums = StadiumApp::Stadium.all
+    @stadiums = StadiumApi::Stadium.all
 
     rabl :stadium, format: 'json'
   end
 
   get '/:id' do
-    @stadium = StadiumApp::Stadium.find(params[:id])
+    @stadium = StadiumApi::Stadium.find(params[:id])
     rabl :stadium, format: 'json'
   end
 end

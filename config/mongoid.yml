@@ -3,7 +3,7 @@ development:
     default:
       database: stadiums_development
       hosts:
-        - localhost:<%= ENV["MONGODB_PORT"] || "27017" %>
+        - localhost:27017
 
 test:
   clients:

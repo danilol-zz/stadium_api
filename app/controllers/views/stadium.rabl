@@ -1,3 +1,3 @@
-collection @stadium
+collection @stadiums
 
 attributes :id, :name

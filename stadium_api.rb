@@ -12,7 +12,7 @@ require File.join(File.dirname(__FILE__), 'config', 'initializers', 'mongoid')
 
 #Bundler.require
 
-module StadiumApp
+module StadiumApi
   Dir['./app/*.rb'].each { |lib| require lib }
 
   Dir[File.join(File.dirname(__FILE__), 'app', 'models/*.rb')].each do |f|
@@ -26,9 +26,10 @@ module StadiumApp
 
   def self.route_map
     map = {
-      #'/'                      => StadiumApp::App,
+      #'/'                      => StadiumApi::App,
       '/users'                 => UsersController,
       '/stadiums'              => StadiumsController,
+      '/countries'             => CountriesController,
       #'/health_check'          => IbaConfig::HealthCheck::VersionedApp.new({ mongo: IbaConfig::HealthCheck::Mongo.new, })
     }
 

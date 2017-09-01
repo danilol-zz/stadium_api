@@ -1,4 +1,4 @@
-class StadiumApp::User
+class StadiumApi::User
   include Mongoid::Document
 
   field :email, type: String

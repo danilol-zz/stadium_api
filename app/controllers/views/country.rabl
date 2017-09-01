@@ -1,4 +1,4 @@
 object false
-child @stadium => :resource do
+child @country => :resource do
   attributes :name
 end

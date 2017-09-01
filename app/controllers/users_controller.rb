@@ -1,7 +1,7 @@
 class UsersController< Sinatra::Base
 
   get '/' do
-    @user = Stadium::User.all
+    @user = StadiumApi::User.all
 
     render :rabl, :user, format: 'json'
   end
@@ -9,7 +9,7 @@ class UsersController< Sinatra::Base
   get '/:id' do
     logger.info "looking for '#{params[:id]}'"
 
-    @user = Stadium::User.find(params[:id])
+    @user = StadiumApi::User.find(params[:id])
 
     render :rabl, :user, format: 'json'
   end

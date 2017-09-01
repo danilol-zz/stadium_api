@@ -1,7 +1,7 @@
-class StadiumApi::Stadium
+class StadiumApi::Country
   include Mongoid::Document
 
-  store_in collection: "stadiums"
+  store_in collection: "countries"
 
   field :name, type: String
 end
